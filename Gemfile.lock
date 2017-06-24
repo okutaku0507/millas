@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    millas (0.0.1)
+    millas (0.0.2)
       activesupport
       dalli
 
