@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.version     = Millas::VERSION
   spec.authors     = ["Takuya Okuhara"]
   spec.email       = ["work.okutaku0507@gmail.com"]
-  spec.homepage    = "https://github.com/okutaku0507"
+  spec.homepage    = "https://github.com/okutaku0507/millas"
   spec.summary     = "Simple and dispersed cache mechanism."
   spec.description = "Simple and dispersed cache mechanism."
   spec.license     = "MIT"
