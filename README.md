@@ -60,7 +60,7 @@ $ gem install millas
 
 ## Configuration
 
-```
+```ruby
 Millas.configure do |config|
   config.dispersion_number = 5 # default
   config.perform_dispersing = true # default
