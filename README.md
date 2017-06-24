@@ -20,21 +20,22 @@ Expiration time of cached values is Layered.
 
 It is not conscious of Milas.
 
-```
+```ruby
 cache = ActiveSupport::Cache::DalliStore.new
 
 cache.write('millas', 'cake', expires_in: 1.minutes)
 # Cache write: millas-1 ({:expires_in=>60 seconds})
 # Cache write: millas-2 ({:expires_in=>120 seconds})
 # Cache write: millas-3 ({:expires_in=>180 seconds})
+=> 90916417477541888
 
 cache.read('millas')
 # Cache read: millas-2
-# => "cake"
+=> "cake"
 
 cache.exist?('millas')
 # Cache exist: millas-1
-# => true
+=> true
 
 cache.delete('millas')
 # Cache delete: millas-1
@@ -55,6 +56,32 @@ Or install it yourself as:
 ```bash
 $ gem install dalli
 $ gem install millas
+```
+
+## Configuration
+
+```
+Millas.configure do |config|
+  config.dispersion_number = 5 # default
+  config.perform_dispersing = true # default
+  config.second_intervals = 60 # default
+end
+```
+
+If this mechanism is adopted only for a specific part, it should do as follows.
+
+```ruby
+Millas.config.perform_dispersing = false
+
+cache.write('millas', 'cake', expires_in: 1.minutes)
+# Cache write: millas ({:expires_in=>60 seconds})
+=> 883549951894749184
+
+cache.write('millas', 'cake', expires_in: 1.minutes, dispersed: true)
+# Cache write: millas-1 ({:expires_in=>60 seconds})
+# Cache write: millas-2 ({:expires_in=>120 seconds})
+# Cache write: millas-3 ({:expires_in=>180 seconds})
+=> 15366844878541553664
 ```
 
 ## Copyright
