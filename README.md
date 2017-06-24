@@ -52,13 +52,11 @@ cache.delete('millas')
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'dalli'
 gem 'millas'
 ```
 
 Or install it yourself as:
 ```bash
-$ gem install dalli
 $ gem install millas
 ```
 
