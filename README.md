@@ -4,7 +4,7 @@ Millas is a simple cache mechanism. In this mechanism, cached values are dispers
 
 By the way, Millas is a magic cake which becomes 3 layers when baked once. And it is traditional sweets in Landes (France).
 
-![compressed_thumbnail_square_small](https://user-images.githubusercontent.com/4189626/27506204-9d02d5f0-58ee-11e7-8517-8b16a003fd42.png)
+<img src="https://user-images.githubusercontent.com/4189626/27506204-9d02d5f0-58ee-11e7-8517-8b16a003fd42.png" width="200px">
 
 ## Mechanism
 
@@ -12,13 +12,13 @@ By the way, Millas is a magic cake which becomes 3 layers when baked once. And i
 
 Cached values whose key is appended random and specified number to the end.
 
-![0001](https://user-images.githubusercontent.com/4189626/27507452-b372eebc-590a-11e7-88fc-32cc424454b7.jpg)
+<img src="https://user-images.githubusercontent.com/4189626/27507452-b372eebc-590a-11e7-88fc-32cc424454b7.jpg" width="400px">
 
 ### Layered in time
 
 Expiration time of cached values is Layered.
 
-![millas-2-1](https://user-images.githubusercontent.com/4189626/27507451-b2760260-590a-11e7-90a9-d481cb4e8bc2.png)
+<img src="https://user-images.githubusercontent.com/4189626/27507451-b2760260-590a-11e7-90a9-d481cb4e8bc2.png" width="400px">
 
 ## Usage
 
