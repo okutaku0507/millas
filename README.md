@@ -12,13 +12,13 @@ By the way, Millas is a magic cake which becomes 3 layers when baked once. And i
 
 Cached values whose key is appended random and specified number to the end.
 
-<img src="https://user-images.githubusercontent.com/4189626/27507452-b372eebc-590a-11e7-88fc-32cc424454b7.jpg" width="400px">
+<img src="https://user-images.githubusercontent.com/4189626/27507452-b372eebc-590a-11e7-88fc-32cc424454b7.jpg" width="500px">
 
 ### Layered in time
 
 Expiration time of cached values is Layered.
 
-<img src="https://user-images.githubusercontent.com/4189626/27507451-b2760260-590a-11e7-90a9-d481cb4e8bc2.png" width="400px">
+<img src="https://user-images.githubusercontent.com/4189626/27507451-b2760260-590a-11e7-90a9-d481cb4e8bc2.png" width="500px">
 
 ## Usage
 
