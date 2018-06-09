@@ -20,6 +20,10 @@ Expiration time of cached values is Layered.
 
 <img src="https://user-images.githubusercontent.com/4189626/27507451-b2760260-590a-11e7-90a9-d481cb4e8bc2.png" width="500px">
 
+### Magic number vs Frequency
+
+<img src="https://user-images.githubusercontent.com/4189626/41190988-45f8d356-6c23-11e8-968e-11e0381fc63b.png" width="500px">
+
 ## Usage
 
 It is not conscious of Milas.
