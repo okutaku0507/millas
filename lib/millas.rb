@@ -90,10 +90,26 @@ class ActiveSupport::Cache::DalliStore
   end
 
   def decorated_name(name, num = nil)
-    "#{name}-#{num || dispersions.sample}"
+    "#{name}-#{num || magic_number}"
   end
 
   def advanced_expires_in(expires_in, n)
     expires_in + second_intervals*(n-1)
+  end
+
+  def magic_number
+    number = dispersion_number
+    # quadratic function
+    result = number**rand
+    # feel good factor (max = 0.35)
+    alpha = number/40.to_f
+    max_alpha = 0.35
+    result += if alpha < max_alpha
+      alpha
+    else
+      max_alpha
+    end
+    # return opposite number of the maximum value
+    number - result.floor + 1
   end
 end
