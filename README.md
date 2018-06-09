@@ -22,6 +22,8 @@ Expiration time of cached values is Layered.
 
 ### Magic number vs Frequency
 
+The lower the frequency, the earlier the expiration of the cache key.
+
 <img src="https://user-images.githubusercontent.com/4189626/41190988-45f8d356-6c23-11e8-968e-11e0381fc63b.png" width="500px">
 
 ## Usage
